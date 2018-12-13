@@ -23,9 +23,11 @@ $resultat = $conn->query($sql);
 if ($resultat->rowCount() > 0) {
     // On le convertit en JSON et on l'affiche.
     echo(json_encode($resultat->fetchAll(PDO::FETCH_ASSOC)));
+    
 }
 else { // Sinon, on affiche null.
-    $resultat = "null";
+    $resultat = [];
+    //echo ($resultat->fetchAll());
     echo (json_encode($resultat));
 }
 

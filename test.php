@@ -1,4 +1,4 @@
-<form action="recupDATA.php" method="post">
+<form action="recupDATA.php" method="get">
     <div>        
         <label for="filiere">Filière: </label>
         <input type="text" name="filiere" id="filiere">
